@@ -1,0 +1,17 @@
+1,1,username1,5
+2,1,username2,2
+92203,2,username1,5
+26816,3,username1,5
+72581,1,username6,4
+75500,2,username6,5
+78941,3,username6,1
+83608,4,username6,2
+86508,5,username6,4
+91157,6,username6,4
+94026,7,username6,4
+44400,4,username1,5
+51853,7,username1,5
+5621,4,username7,5
+59425,7,username7,5
+19551,6,username7,5
+28818,5,username7,5

@@ -1,0 +1,7 @@
+1,Cafe đen,15000,CAFE
+2,Cafe sữa,18000,CAFE
+3,Bạc xỉu,20000,CAFE
+4,Freeze Socola,45000,FREEZE
+5,Freeze Matcha,45000,FREEZE
+6,Trà sen vàng,55000,TEA
+7,Trà thạch đào,55000,TEA
