@@ -318,16 +318,21 @@ public class UserView {
 
         //Tìm kiếm tới user có id muốn xóa
         User foundUser = iUserService.findUserById(idDelete);
-        //Lấy ra username của user muốn xóa
-        String strUsername = foundUser.getUsername();
-        //Xóa username ở file order và file rateproduct
-        iOrderService.upadteUsername(strUsername);
-        iRateProductService.updateRateProductUsername(strUsername);
 
-        iUserService.deleteUser(idDelete);
-        System.out.printf("Xóa thành công user có id %s\n", idDelete);
-        showUser();
+        if(foundUser.getRole() == ERole.ADMIN){
+            System.out.println("Không thể xóa user với role ADMIN");
+        }else if(foundUser.getRole() != ERole.ADMIN){
+            //Lấy ra username của user muốn xóa
+            String strUsername = foundUser.getUsername();
+            //Xóa username ở file order và file rateproduct
+            iOrderService.upadteUsername(strUsername);
+            iRateProductService.updateRateProductUsername(strUsername);
+
+            iUserService.deleteUser(idDelete);
+            System.out.printf("Xóa thành công user có id %s\n", idDelete);
+            showUser();
         }
+    }
 
     private void updateUser() {
         if(AuthUtils.hasRole(ERole.ADMIN)){

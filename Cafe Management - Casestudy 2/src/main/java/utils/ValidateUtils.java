@@ -14,7 +14,7 @@ public class ValidateUtils {
     public static final String FIELD_NAME = "tên";
     public static final String FIELD_NAME_MASSAGE = "Tên bắt đầu bằng kí tự, có từ 1 - 50 kí tự";
     public static final String FIELD_PHONE = "số điện thoại";
-    public static final String FIELD_PHONE_MASSAGE = "Số điện thoại phải bắt đầu bằng số không và phải có 10 số";
+    public static final String FIELD_PHONE_MASSAGE = "Số điện thoại phải bắt đầu bằng số 0 và phải có 10 số";
     public static final String FIELD_DOB = "ngày sinh";
     public static final String FIELD_DOB_MESSAGE = "Ngày sinh không hợp lệ. Vui lòng nhập lại theo định dạng!";
     public static final String FIELD_USERNAME = "username";
